@@ -12,7 +12,40 @@
 		6F1278972516559300E76B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1278962516559300E76B5F /* Assets.xcassets */; };
 		6F12789A2516559300E76B5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1278992516559300E76B5F /* Preview Assets.xcassets */; };
 		6F12789D2516559300E76B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F12789B2516559300E76B5F /* Main.storyboard */; };
+		6F1278A725165AE100E76B5F /* TextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1278A625165AE100E76B5F /* TextProvider.swift */; };
+		6F1278B4251664CA00E76B5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1278B3251664CA00E76B5F /* main.m */; };
+		6F1278B8251664CA00E76B5F /* SandboxBreaker.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 6F1278AD251664CA00E76B5F /* SandboxBreaker.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6F1278DA25167A7200E76B5F /* SandboxBreaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1278D925167A7200E76B5F /* SandboxBreaker.swift */; };
+		6F1278E125167B1200E76B5F /* SandboxBreakerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1278E025167B1200E76B5F /* SandboxBreakerConnection.swift */; };
+		6F1278E625167B5F00E76B5F /* SandboxBreakerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1278E025167B1200E76B5F /* SandboxBreakerConnection.swift */; };
+		6F1278E925167BD400E76B5F /* SandboxBreakerProtocol.h in Sources */ = {isa = PBXBuildFile; fileRef = 6F1278AF251664CA00E76B5F /* SandboxBreakerProtocol.h */; };
+		6F1278EE25167C0700E76B5F /* SandboxBreakerProtocol.h in Sources */ = {isa = PBXBuildFile; fileRef = 6F1278AF251664CA00E76B5F /* SandboxBreakerProtocol.h */; };
+		6FD92F6225183EEC00D38038 /* SSHProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD92F6125183EEC00D38038 /* SSHProvider.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F1278B6251664CA00E76B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F1278872516559300E76B5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F1278AC251664CA00E76B5F;
+			remoteInfo = SandboxBreaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F1278BC251664CA00E76B5F /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				6F1278B8251664CA00E76B5F /* SandboxBreaker.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6F12788F2516559300E76B5F /* SandboxXPCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandboxXPCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,10 +56,28 @@
 		6F12789C2516559300E76B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F12789E2516559300E76B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F12789F2516559300E76B5F /* SandboxXPCTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SandboxXPCTest.entitlements; sourceTree = "<group>"; };
+		6F1278A625165AE100E76B5F /* TextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProvider.swift; sourceTree = "<group>"; };
+		6F1278AD251664CA00E76B5F /* SandboxBreaker.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = SandboxBreaker.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1278AF251664CA00E76B5F /* SandboxBreakerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandboxBreakerProtocol.h; sourceTree = "<group>"; };
+		6F1278B3251664CA00E76B5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F1278B5251664CA00E76B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1278C22516716D00E76B5F /* SandboxXPCTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SandboxXPCTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F1278D925167A7200E76B5F /* SandboxBreaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxBreaker.swift; sourceTree = "<group>"; };
+		6F1278DD25167AB900E76B5F /* SandboxBreaker-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SandboxBreaker-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F1278E025167B1200E76B5F /* SandboxBreakerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxBreakerConnection.swift; sourceTree = "<group>"; };
+		6FAB9A8B254CDC8200739659 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6FD92F6125183EEC00D38038 /* SSHProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6F12788C2516559300E76B5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1278AA251664CA00E76B5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,7 +90,9 @@
 		6F1278862516559300E76B5F = {
 			isa = PBXGroup;
 			children = (
+				6FAB9A8B254CDC8200739659 /* .gitignore */,
 				6F1278912516559300E76B5F /* SandboxXPCTest */,
+				6F1278AE251664CA00E76B5F /* SandboxBreaker */,
 				6F1278902516559300E76B5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				6F12788F2516559300E76B5F /* SandboxXPCTest.app */,
+				6F1278AD251664CA00E76B5F /* SandboxBreaker.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,10 +111,10 @@
 			children = (
 				6F1278922516559300E76B5F /* AppDelegate.swift */,
 				6F1278942516559300E76B5F /* ContentView.swift */,
-				6F1278962516559300E76B5F /* Assets.xcassets */,
-				6F12789B2516559300E76B5F /* Main.storyboard */,
-				6F12789E2516559300E76B5F /* Info.plist */,
-				6F12789F2516559300E76B5F /* SandboxXPCTest.entitlements */,
+				6F1278A625165AE100E76B5F /* TextProvider.swift */,
+				6FD92F6125183EEC00D38038 /* SSHProvider.swift */,
+				6F1278C22516716D00E76B5F /* SandboxXPCTest-Bridging-Header.h */,
+				6F1278D22516725100E76B5F /* Support */,
 				6F1278982516559300E76B5F /* Preview Content */,
 			);
 			path = SandboxXPCTest;
@@ -74,6 +128,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6F1278AE251664CA00E76B5F /* SandboxBreaker */ = {
+			isa = PBXGroup;
+			children = (
+				6F1278AF251664CA00E76B5F /* SandboxBreakerProtocol.h */,
+				6F1278DD25167AB900E76B5F /* SandboxBreaker-Bridging-Header.h */,
+				6F1278D925167A7200E76B5F /* SandboxBreaker.swift */,
+				6F1278E025167B1200E76B5F /* SandboxBreakerConnection.swift */,
+				6F1278B3251664CA00E76B5F /* main.m */,
+				6F1278B5251664CA00E76B5F /* Info.plist */,
+			);
+			path = SandboxBreaker;
+			sourceTree = "<group>";
+		};
+		6F1278D22516725100E76B5F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6F1278962516559300E76B5F /* Assets.xcassets */,
+				6F12789B2516559300E76B5F /* Main.storyboard */,
+				6F12789E2516559300E76B5F /* Info.plist */,
+				6F12789F2516559300E76B5F /* SandboxXPCTest.entitlements */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,15 +162,34 @@
 				6F12788B2516559300E76B5F /* Sources */,
 				6F12788C2516559300E76B5F /* Frameworks */,
 				6F12788D2516559300E76B5F /* Resources */,
+				6F1278BC251664CA00E76B5F /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6F1278B7251664CA00E76B5F /* PBXTargetDependency */,
 			);
 			name = SandboxXPCTest;
 			productName = SandboxXPCTest;
 			productReference = 6F12788F2516559300E76B5F /* SandboxXPCTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6F1278AC251664CA00E76B5F /* SandboxBreaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1278B9251664CA00E76B5F /* Build configuration list for PBXNativeTarget "SandboxBreaker" */;
+			buildPhases = (
+				6F1278A9251664CA00E76B5F /* Sources */,
+				6F1278AA251664CA00E76B5F /* Frameworks */,
+				6F1278AB251664CA00E76B5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SandboxBreaker;
+			productName = SandboxBreaker;
+			productReference = 6F1278AD251664CA00E76B5F /* SandboxBreaker.xpc */;
+			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +202,10 @@
 				TargetAttributes = {
 					6F12788E2516559300E76B5F = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					6F1278AC251664CA00E76B5F = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -122,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				6F12788E2516559300E76B5F /* SandboxXPCTest */,
+				6F1278AC251664CA00E76B5F /* SandboxBreaker */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +239,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F1278AB251664CA00E76B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,11 +254,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1278952516559300E76B5F /* ContentView.swift in Sources */,
+				6FD92F6225183EEC00D38038 /* SSHProvider.swift in Sources */,
+				6F1278A725165AE100E76B5F /* TextProvider.swift in Sources */,
 				6F1278932516559300E76B5F /* AppDelegate.swift in Sources */,
+				6F1278E925167BD400E76B5F /* SandboxBreakerProtocol.h in Sources */,
+				6F1278E625167B5F00E76B5F /* SandboxBreakerConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1278A9251664CA00E76B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1278B4251664CA00E76B5F /* main.m in Sources */,
+				6F1278EE25167C0700E76B5F /* SandboxBreakerProtocol.h in Sources */,
+				6F1278DA25167A7200E76B5F /* SandboxBreaker.swift in Sources */,
+				6F1278E125167B1200E76B5F /* SandboxBreakerConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F1278B7251664CA00E76B5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F1278AC251664CA00E76B5F /* SandboxBreaker */;
+			targetProxy = 6F1278B6251664CA00E76B5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6F12789B2516559300E76B5F /* Main.storyboard */ = {
@@ -281,6 +413,7 @@
 		6F1278A32516559300E76B5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SandboxXPCTest/SandboxXPCTest.entitlements;
@@ -298,6 +431,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = me.clayreimann.SandboxXPCTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SandboxXPCTest/SandboxXPCTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -305,6 +439,7 @@
 		6F1278A42516559300E76B5F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SandboxXPCTest/SandboxXPCTest.entitlements;
@@ -322,6 +457,52 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = me.clayreimann.SandboxXPCTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SandboxXPCTest/SandboxXPCTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6F1278BA251664CA00E76B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PQMW4AT355;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SandboxBreaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.clayreimann.SandboxBreaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SandboxBreaker/SandboxBreaker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6F1278BB251664CA00E76B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PQMW4AT355;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SandboxBreaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.clayreimann.SandboxBreaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SandboxBreaker/SandboxBreaker-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -343,6 +524,15 @@
 			buildConfigurations = (
 				6F1278A32516559300E76B5F /* Debug */,
 				6F1278A42516559300E76B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1278B9251664CA00E76B5F /* Build configuration list for PBXNativeTarget "SandboxBreaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1278BA251664CA00E76B5F /* Debug */,
+				6F1278BB251664CA00E76B5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
