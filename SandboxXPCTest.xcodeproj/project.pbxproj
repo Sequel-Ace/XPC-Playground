@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,11 @@
 		6F1278E625167B5F00E76B5F /* SandboxBreakerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1278E025167B1200E76B5F /* SandboxBreakerConnection.swift */; };
 		6F1278E925167BD400E76B5F /* SandboxBreakerProtocol.h in Sources */ = {isa = PBXBuildFile; fileRef = 6F1278AF251664CA00E76B5F /* SandboxBreakerProtocol.h */; };
 		6F1278EE25167C0700E76B5F /* SandboxBreakerProtocol.h in Sources */ = {isa = PBXBuildFile; fileRef = 6F1278AF251664CA00E76B5F /* SandboxBreakerProtocol.h */; };
+		6FAFC1A9254CE52700B49EA3 /* fd in Frameworks */ = {isa = PBXBuildFile; productRef = 6FAFC1A8254CE52700B49EA3 /* fd */; };
+		6FAFC1AD254DA3BE00B49EA3 /* SocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAFC1AC254DA3BE00B49EA3 /* SocketProvider.swift */; };
+		6FAFC1B4254DA9A400B49EA3 /* SocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAFC1B3254DA9A400B49EA3 /* SocketView.swift */; };
+		6FAFC1BA254DA9F700B49EA3 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAFC1B9254DA9F700B49EA3 /* TextView.swift */; };
+		6FAFC1BE254DAA8000B49EA3 /* SSHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAFC1BD254DAA8000B49EA3 /* SSHView.swift */; };
 		6FD92F6225183EEC00D38038 /* SSHProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD92F6125183EEC00D38038 /* SSHProvider.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +71,10 @@
 		6F1278DD25167AB900E76B5F /* SandboxBreaker-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SandboxBreaker-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F1278E025167B1200E76B5F /* SandboxBreakerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxBreakerConnection.swift; sourceTree = "<group>"; };
 		6FAB9A8B254CDC8200739659 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6FAFC1AC254DA3BE00B49EA3 /* SocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketProvider.swift; sourceTree = "<group>"; };
+		6FAFC1B3254DA9A400B49EA3 /* SocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketView.swift; sourceTree = "<group>"; };
+		6FAFC1B9254DA9F700B49EA3 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		6FAFC1BD254DAA8000B49EA3 /* SSHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHView.swift; sourceTree = "<group>"; };
 		6FD92F6125183EEC00D38038 /* SSHProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FAFC1A9254CE52700B49EA3 /* fd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,9 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				6F1278922516559300E76B5F /* AppDelegate.swift */,
-				6F1278942516559300E76B5F /* ContentView.swift */,
-				6F1278A625165AE100E76B5F /* TextProvider.swift */,
-				6FD92F6125183EEC00D38038 /* SSHProvider.swift */,
+				6FAFC1B2254DA99400B49EA3 /* DataProviders */,
+				6FAB9A90254CDF1400739659 /* UI */,
 				6F1278C22516716D00E76B5F /* SandboxXPCTest-Bridging-Header.h */,
 				6F1278D22516725100E76B5F /* Support */,
 				6F1278982516559300E76B5F /* Preview Content */,
@@ -152,6 +161,27 @@
 			name = Support;
 			sourceTree = "<group>";
 		};
+		6FAB9A90254CDF1400739659 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6F1278942516559300E76B5F /* ContentView.swift */,
+				6FAFC1B3254DA9A400B49EA3 /* SocketView.swift */,
+				6FAFC1B9254DA9F700B49EA3 /* TextView.swift */,
+				6FAFC1BD254DAA8000B49EA3 /* SSHView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6FAFC1B2254DA99400B49EA3 /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				6F1278A625165AE100E76B5F /* TextProvider.swift */,
+				6FD92F6125183EEC00D38038 /* SSHProvider.swift */,
+				6FAFC1AC254DA3BE00B49EA3 /* SocketProvider.swift */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,6 +200,9 @@
 				6F1278B7251664CA00E76B5F /* PBXTargetDependency */,
 			);
 			name = SandboxXPCTest;
+			packageProductDependencies = (
+				6FAFC1A8254CE52700B49EA3 /* fd */,
+			);
 			productName = SandboxXPCTest;
 			productReference = 6F12788F2516559300E76B5F /* SandboxXPCTest.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +251,9 @@
 				Base,
 			);
 			mainGroup = 6F1278862516559300E76B5F;
+			packageReferences = (
+				6FAFC1A7254CE52700B49EA3 /* XCRemoteSwiftPackageReference "fd" */,
+			);
 			productRefGroup = 6F1278902516559300E76B5F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,11 +290,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1278952516559300E76B5F /* ContentView.swift in Sources */,
+				6FAFC1AD254DA3BE00B49EA3 /* SocketProvider.swift in Sources */,
 				6FD92F6225183EEC00D38038 /* SSHProvider.swift in Sources */,
 				6F1278A725165AE100E76B5F /* TextProvider.swift in Sources */,
 				6F1278932516559300E76B5F /* AppDelegate.swift in Sources */,
 				6F1278E925167BD400E76B5F /* SandboxBreakerProtocol.h in Sources */,
+				6FAFC1BA254DA9F700B49EA3 /* TextView.swift in Sources */,
 				6F1278E625167B5F00E76B5F /* SandboxBreakerConnection.swift in Sources */,
+				6FAFC1B4254DA9A400B49EA3 /* SocketView.swift in Sources */,
+				6FAFC1BE254DAA8000B49EA3 /* SSHView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6FAFC1A7254CE52700B49EA3 /* XCRemoteSwiftPackageReference "fd" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kylef-archive/fd";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6FAFC1A8254CE52700B49EA3 /* fd */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6FAFC1A7254CE52700B49EA3 /* XCRemoteSwiftPackageReference "fd" */;
+			productName = fd;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F1278872516559300E76B5F /* Project object */;
 }
